@@ -1,4 +1,4 @@
 version: 1.0-preview-1
 steps:
   - build: -t {{.Values.REGISTRY}}/hello-world:{{.Run.ID}} .
-  - push: ["{{.Values.Registry}}/hello-world:{{.Run.ID}}"]
+  - push: ["{{.Values.REGISTRY}}/hello-world:{{.Run.ID}}"]
