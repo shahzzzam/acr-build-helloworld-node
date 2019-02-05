@@ -1,6 +1,6 @@
 version: 1.0-preview-1
 steps:
-  - build: -t {{.Values.REGISTRY1}}/hello-world:{{.Run.ID}} .
-  - push: ["{{.Values.REGISTRY1}}/hello-world:{{.Run.ID}}"]
-  - build: -t {{.Values.REGISTRY2}}/hello-world:{{.Run.ID}} .
-  - push: ["{{.Values.REGISTRY2}}/hello-world:{{.Run.ID}}"]
+  - build: -t acrbuilddemo.azurecr.io/hello-world:{{.Run.ID}} .
+  - push: ["acrbuilddemo.azurecr.io/hello-world:{{.Run.ID}}"]
+  - build: -t acrautobuild.azurecr.io/hello-world:{{.Run.ID}} .
+  - push: ["acrautobuild.azurecr.io/hello-world:{{.Run.ID}}"]

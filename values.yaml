@@ -1,2 +1,2 @@
-REGISTRY1=acrbuilddemo.azurecr.io
-REGISTRY2=acrautobuild.azurecr.io
+REGISTRY1:'acrbuilddemo.azurecr.io'
+REGISTRY2:'acrautobuild.azurecr.io'
